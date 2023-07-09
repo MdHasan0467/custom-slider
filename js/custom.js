@@ -12,29 +12,42 @@
     ]
 
 
+
 //! img gulor index value ber korar jonno...
     let imgIndex = 0;
+
+
+
 //! kothay img gulo dekhabe sei field k dorlam ...
     const sliderField = document.getElementById('sliderField'); 
+
+
 
 
 //! ektar por ekta asar jonno...
     setInterval( ()=>{
 
-//! imgIndex er maan jodi amr slideImg er modde joto gulo index ase tar soman hoy Taholy   imgIndex er maan ta abr 0 theke count hobe...
+//!* imgIndex er maan jodi amr slideImg er modde joto gulo index ase tar soman hoy Taholy   imgIndex er maan ta abr 0 theke count hobe...
     if(imgIndex === slideImg.length){
     imgIndex = 0;
     }
 
 
-// !   ...
+//*   ...
     const imgLink = slideImg[imgIndex]
-//! img gulo k set korar jonno ...
+
+
+
+//!* img gulo k set korar jonno ...
     sliderField.setAttribute('src', imgLink)
 
-//! img gulor index value ek ek kore + hobe...
+
+
+
+//!* img gulor index value ek ek kore + hobe...
         imgIndex++;
         console.log(imgLink)
     }
- //! 1 second por por loop cholbe R ektar por ekta aste thakbe...   
+
+ //!* 1 second por por loop cholbe R ektar por ekta aste thakbe...   
     ,1000)
